@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-result = string.ascii_lowercase
-print("result")
+import string
+print(string.ascii_lowercase)
