@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 import string
-print("{}".format(string.ascii_lowercase))
+A = string.ascii_lowercase
+print("{}".format(A))
