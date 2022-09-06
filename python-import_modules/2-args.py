@@ -2,6 +2,7 @@
 import sys
 if __name__ == '__main__':
     count = len(sys.argv) - 1
+    idx = 1
     if count == 1:
         print("{}: argument".format(count))
     else:
