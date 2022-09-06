@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 import sys
 if __name__ == '__main__':
-sum = 0
+a = 0
 for num in arg:
     if not str(num).isdigit():
         print (0)
     else:
-        sum += int(num)
+        a += int(num)
     print(num)
