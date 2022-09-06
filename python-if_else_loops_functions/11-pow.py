@@ -6,4 +6,4 @@ def pow(a, b):
             number = number * a
         b >>= 1
         a = a * a
-    return (number)
+    return (float(number))
