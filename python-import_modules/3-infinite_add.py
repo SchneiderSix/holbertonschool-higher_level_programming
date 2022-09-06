@@ -4,5 +4,5 @@ if __name__ == '__main__':
     a = 0
 
     for idx, arg in enumerate(sys.argv[1:], start=1):
-        a += arg
+        a += int(arg)
     print("{}".format(a))
