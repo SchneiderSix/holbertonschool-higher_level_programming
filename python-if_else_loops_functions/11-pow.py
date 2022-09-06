@@ -7,7 +7,7 @@ def pow(a, b):
 
         while b:
             if b % 2:
-                iq*= a
-            a*=a
-            b//=2
+                iq *= a
+            a *= a
+            b //= 2
         return (iq)
