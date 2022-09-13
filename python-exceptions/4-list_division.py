@@ -10,10 +10,10 @@ def list_division(my_list_1, my_list_2, list_length):
             print("wrong type")
         except (ZeroDivisionError):
             dn = 0
-            print("division by 0"):
-        except (IndexError)
+            print("division by 0")
+        except (IndexError):
             dn = 0
-            print("out of range"):
+            print("out of range")
         finally:
             nl.append(dn)
     return nl
