@@ -2,6 +2,7 @@
 """More documentation."""
 
 class Square:
+
     """
     Private
     instance attribute: size.
