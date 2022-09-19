@@ -1,9 +1,15 @@
 #!/usr/bin/python3
-"""Define a class Square."""
-
-
 class Square:
-    """Represent a square."""
+    """Represent a square.
+    Private instance attribute: size:
+        - property def size
+        - property setter
+    Private instance attribute: position:
+        - property setter position
+        - property def position
+    Public instance method: area
+    Public instance method: print
+    """
 
     def __init__(self, size=0, position=(0, 0)):
         """Initialize a new Square.
