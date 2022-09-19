@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """More documentation."""
 
+
 class Square:
 
     """
