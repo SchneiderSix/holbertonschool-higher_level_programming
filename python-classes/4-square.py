@@ -1,25 +1,24 @@
 #!/usr/bin/python3
-"""Module, class Square
-.
-.
-.
-"""
+"""More documentation."""
 
 
 class Square:
 
+    """
+    Private
+    instance attribute: size.
+    """
 
     def __init__(self, size=0):
-        """__init__
-        .
-        .
-        .
-        """
-        if not isinstance(value, int):
+        """Instantiation with size."""
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        elif value < 0:
+        elif size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
+
+    def area(self):
+        return self.__size ** 2
 
     @setter
     def size(self, value):
@@ -32,6 +31,3 @@ class Square:
     @retrieve_size
     def size(self):
         return self.__size
-
-    def area(self):
-        return self.__size ** 2
