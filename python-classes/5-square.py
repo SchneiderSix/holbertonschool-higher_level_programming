@@ -36,4 +36,4 @@ class Square:
             print()
             return None
         else:
-            print('\n'.join([' '.join('#' * self.__size)] * self.__size))
+            print('\n'.join([''.join('#' * self.__size)] * self.__size))
