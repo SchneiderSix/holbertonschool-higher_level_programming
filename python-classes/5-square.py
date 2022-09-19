@@ -1,27 +1,37 @@
 #!/usr/bin/python3
-"""More documentation."""
+"""Class Square."""
 
 
 class Square:
-
-    """
-    Private
-    instance attribute: size.
+    """Square
+    Attributes:
+        __size (int): size of square's side
     """
 
     def __init__(self, size=0):
-        """Instantiation with size."""
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
+        """Initializes the square
+        Args:
+            ssiz (int): size of square's side
+        Returns:
+            None
+        """
         self.__size = size
 
     def area(self):
+        """Size squared
+        Returns:
+            The area of the square
+        """
         return self.__size ** 2
 
     @setter
     def size(self, value):
+        """Setter
+        Args:
+            value (int): size of square's side
+        Returns:
+            None
+        """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -30,12 +40,19 @@ class Square:
 
     @retrieve_size
     def size(self):
+        """Getter
+        Returns: Size
+        """
         return self.__size
 
     def my_print(self):
+        """Prints square
+        Returns: None
+        """
         if self.__size == 0:
             print()
             return None
         else:
             for i in range(1, self.area() + 1):
-                print("#", end="")
+                for j in range(1, self.area() + 1):
+                    print("#", end="")
