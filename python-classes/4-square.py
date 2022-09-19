@@ -2,8 +2,6 @@
 """More documentation."""
 
 
-from ctypes import set_last_error
-
 
 class Square:
 
