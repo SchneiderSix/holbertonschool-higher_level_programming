@@ -36,4 +36,3 @@ class Square:
         else:
             for i in range(1, self.area() + 1):
                 print("#", end="")
-            
