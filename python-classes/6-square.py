@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Define a class Square."""
+
+
 class Square:
     """Represent a square.
     Private instance attribute: size:
@@ -12,9 +15,7 @@ class Square:
     """
 
     def __init__(self, size=0, position=(0, 0)):
-        """Initialize a new Square.
-        size (int): The size of the new square
-        position (tuple): Tuple for position"""
+        """Initialize a new Square."""
         self.__size = size
         self.__position = position
 
