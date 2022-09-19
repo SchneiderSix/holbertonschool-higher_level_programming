@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-More documentation.
-"""
+""" More documentation. """
 
 
 class Square:
