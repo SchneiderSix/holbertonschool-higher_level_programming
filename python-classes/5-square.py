@@ -6,9 +6,6 @@
 """
 
 
-from pickle import NONE
-
-
 class Square:
 
 
