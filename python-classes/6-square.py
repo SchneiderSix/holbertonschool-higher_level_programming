@@ -3,21 +3,12 @@
 
 
 class Square:
-    """Represent a square.
-    Private instance attribute: size:
-        - property def size
-        - property setter
-    Private instance attribute: position:
-        - property setter position
-        - property def position
-    Public instance method: area
-    Public instance method: print
-    """
+    """Represent a square."""
 
-    def __init__(self, size=0, position=(0, 0)):
-        """Initialize a new Square."""
+    def __init__(self, size=0):
+        """Initialize a new Square.
+        size (int): The size of the new square"""
         self.__size = size
-        self.__position = position
 
     @property
     def size(self):
