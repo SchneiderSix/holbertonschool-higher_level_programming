@@ -10,11 +10,12 @@ class Square:
         size (int): The size of the new square"""
         self.__size = size
 
-    def area(self):
-        """Returns the current square area."""
-        return self.__size ** 2
+    @property
+    def size(self):
+        """Get/set the current size of the square."""
+        return self.__size
 
-    @setter
+    @size.setter
     def size(self, value):
         """Sets the size to a value."""
         if not isinstance(value, int):
@@ -23,7 +24,6 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    @retrieve_size
-    def size(self):
-        """Get/set the current size of the square."""
-        return self.__size
+    def area(self):
+        """Returns the current square area"""
+        return self.__size ** 2
