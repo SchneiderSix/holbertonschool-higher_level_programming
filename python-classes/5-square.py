@@ -1,18 +1,17 @@
 #!/usr/bin/python3
-"""Documentation"""
+"""More documentation."""
 
 
 class Square:
-    """This is a class"""
+
+    """
+    Private
+    instance attribute: size.
+    """
 
 
     def __init__(self, size=0):
-        """__init__
-        .
-        .
-        .
-        """
-
+        """Instantiation with size."""
         self.__size = size
 
     @setter
