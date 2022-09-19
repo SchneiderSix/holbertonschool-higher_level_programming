@@ -2,7 +2,6 @@
 """More documentation."""
 
 
-
 class Square:
 
     """
