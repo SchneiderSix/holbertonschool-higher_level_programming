@@ -1,12 +1,16 @@
 #!/usr/bin/python3
+"""More documentation."""
+
+
 class Square:
-    """Private instance attribute: size.
+
     """
+    Private
+    instance attribute: size.
+    """
+
     def __init__(self, size=0):
-        """This method initialize the size value of square.
-        TypeError: "size must be an integer" when value isn't int
-        ValueError: "size must be >= 0" for value less than 0
-        """
+        """Instantiation with size."""
         self.__size = size
 
     @setter
