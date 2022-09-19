@@ -38,8 +38,14 @@ class Square:
             print()
             return None
         else:
-            print('\n'.join([''.join(' ' * self.__position)] * self.__position))
-            print('\n'.join([''.join('#' * self.__size)] * self.__size))
+            for i in range(0, self.__position[1]):
+                print()
+            for j in range(0, self.__size):
+                for h in range(0, self.__position[0]):
+                    print(" ", end="")
+                for l in range(0, self.__size):
+                    print("#", end="")
+            print()
 
 
     @setter_position
