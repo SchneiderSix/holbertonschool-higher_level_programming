@@ -6,8 +6,16 @@ Using ``matrix_divided(matrix, div)``
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
     >>> matrix = [
-    ...     [1, 2, 3], 
+    ...     [1, 2, 3],
     ...     [4, 5, 6]
     ... ]
-    >>> print(matrix_divided((matrix, 2))
-    [[0.5, 1.0, 1.5], [2.0, 2.5, 3.0]]
+    >>> print(matrix_divided(matrix, 3))
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+    >>> matrix = [
+    ...     [1, 2, 3],
+    ...     [4, 5, 6]
+    ... ]
+    >>> print(matrix_divided(matrix, "not a number"))
+    Traceback (most recent call last):
+    TypeError: div must be a number
