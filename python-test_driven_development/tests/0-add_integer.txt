@@ -15,7 +15,3 @@ Using ``add_integer``
 	-3
 	>>> add_integer(9, -3)
 	6
-	>>> add_integer(None)
-	Traceback (most recen call last):
-	TypeErorr: a must be an integer
-
