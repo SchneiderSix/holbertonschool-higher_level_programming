@@ -12,5 +12,5 @@ def print_square(size):
         raise ValueError("size must be >= 0")
     if type(size) is float and size < 0:
         raise TypeError("size must be an integer")
-
-    print('\n'.join([''.join('#' * size)] * size))
+    if size is not 0:
+        print('\n'.join([''.join('#' * size)] * size))
