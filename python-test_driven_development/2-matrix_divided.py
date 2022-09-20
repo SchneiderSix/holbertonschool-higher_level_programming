@@ -11,7 +11,5 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
     cpy = matrix.copy()
-    for i in range(len(cpy)):
-        for j in range(len(cpy[i])):
-            round 
+    cpy = [list(map(lambda x: round(x / div, 2), roow)) for roow in matrix]
     return cpy
