@@ -6,14 +6,15 @@ Defines a Rectangle class.
 
 class Rectangle:
     """Rectangle class defined by width and height."""
+
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle instance.
         Args:
             width: width of the rectangle
             height: height of the rectangle
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -25,7 +26,7 @@ class Rectangle:
         """Retrieves the height of a Rectangle instance."""
         return self.__height
 
-    @widt_setter
+    @width.setter
     def width(self, value):
         """Sets the width of a Rectangle instance
         Args:
@@ -37,7 +38,7 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    @height_setter
+    @height.setter
     def height(self, value):
         """Sets the height of a Rectangle instance
         Args:
