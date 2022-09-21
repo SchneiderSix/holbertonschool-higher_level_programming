@@ -31,7 +31,7 @@ class Rectangle:
     def __repr__(self):
         """Retrieves object representation of
         rectangle in string recreating new instance by using eval()"""
-        return "Rectangle ({}, {})".format(self.__width, self.__height)
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
     @property
     def width(self):
