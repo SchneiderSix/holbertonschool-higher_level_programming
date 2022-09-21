@@ -18,13 +18,12 @@ def text_indentation(text):
         else:
             if text[i] == '.':
                 print(".", end="")
-                i += 1
+                i -= 1
             if text[i] == '?':
                 print("?", end="")
-                i += 1
+
             if text[i] == ':':
                 print(":", end="")
-                i += 1
             if flag == 1:
                 i += 1
                 print(text[i])
