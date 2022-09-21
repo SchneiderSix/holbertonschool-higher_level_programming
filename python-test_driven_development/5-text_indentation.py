@@ -23,10 +23,10 @@ def text_indentation(text):
 
             if text[i] == ':':
                 print(":", end="")
-                i += 3
+
             if flag == 1:
                 i += 1
-                print(text[i])
+                print(join(text[i].split()))
             flag = 0
             print(text[i])
         i += 1
