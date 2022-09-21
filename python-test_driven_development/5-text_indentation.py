@@ -12,9 +12,9 @@ def text_indentation(text):
     nt = ""
     while i < len(text):
         if text[i] not in ".:?":
-            nt = text[i]
+            nt += text[i]
         else:
-            nt = text[i]
+            nt += text[i]
             print(nt)
             print()
             nt = ""
