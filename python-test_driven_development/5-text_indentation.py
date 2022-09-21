@@ -26,7 +26,7 @@ def text_indentation(text):
 
             if flag == 1:
                 i += 1
-                print(join(text[i].split()))
+                print(text[i].strip())
             flag = 0
             print(text[i])
         i += 1
