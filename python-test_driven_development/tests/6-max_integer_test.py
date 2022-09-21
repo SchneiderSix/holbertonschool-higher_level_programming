@@ -34,7 +34,7 @@ class Test_Max_Integer(unittest.TestCase):
 
     def test_none(self):
         """Test none"""
-        self.assertEqual(TypeError, max_integer, None)
+        self.assertRaises(TypeError, max_integer, None)
 
     def test_strings(self):
         """Test strings"""
