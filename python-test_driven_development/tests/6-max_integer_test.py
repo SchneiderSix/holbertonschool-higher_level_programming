@@ -22,15 +22,15 @@ class Test_Max_Integer(unittest.TestCase):
 
     def test_unor_list(self):
         """Test unor list"""
-        self.assertEqual(max_integer([1, 6, 7, 2, 6]), 7)
+        self.assertEqual(max_integer([7, 6, 1, -2, 6]), 7)
 
     def test_negative(self):
         """Test negative"""
-        self.assertEqual(max_integer([-1, -6, -10, -100]), -1)
+        self.assertEqual(max_integer([-10, -6, -1, -100, -5]), -1)
 
     def test_float(self):
         """Test float"""
-        self.assertEqual(max_integer([9, 9.8, 9.9]), 9.9)
+        self.assertEqual(max_integer([9.9]), 9.9)
 
     def test_none(self):
         """Test none"""
