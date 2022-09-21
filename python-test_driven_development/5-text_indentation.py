@@ -23,6 +23,7 @@ def text_indentation(text):
 
             if text[i] == ':':
                 print(":", end="")
+                i += 3
             if flag == 1:
                 i += 1
                 print(text[i])
