@@ -18,7 +18,7 @@ def text_indentation(text):
             print(nt)
             print()
             nt = ""
-            while text[i + 1] == " " and i < (len(text) - 1):
+            while i < (len(text) - 1) and text[i + 1] == " ":
                 i += 1
         i += 1
     print(nt, end="")
