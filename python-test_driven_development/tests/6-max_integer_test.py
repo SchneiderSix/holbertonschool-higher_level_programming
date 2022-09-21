@@ -39,3 +39,6 @@ class Test_Max_Integer:
     def test_strings(self):
         """Test strings"""
         self.assertEqual(max_integer(["low", "iq"]), "low")
+
+if __name__ == '__main__':
+    unittest.main()
