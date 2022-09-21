@@ -20,14 +20,11 @@ class Rectangle:
         """Retrieves an informal string representation of
         a rectangle"""
         if self.__width == 0 or self.__height == 0:
-            return str()
+            return ''
         for i in range(self.__height):
             for j in range(self.__width):
                 print("#", end="")
             print()
-        
-
-        
 
     @property
     def width(self):
@@ -72,4 +69,3 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
-
