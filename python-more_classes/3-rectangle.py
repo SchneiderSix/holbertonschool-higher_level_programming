@@ -21,10 +21,12 @@ class Rectangle:
         a rectangle"""
         if self.__width == 0 or self.__height == 0:
             return ''
+        _print = ''
         for i in range(self.__height):
             for j in range(self.__width):
-                print("#", end="")
-            print()
+                _print += '#'
+            _print += '\n'
+        return _print
 
     @property
     def width(self):
