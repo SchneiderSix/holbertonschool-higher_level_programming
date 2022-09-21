@@ -8,12 +8,24 @@ def text_indentation(text):
     """Print text"""
     if type(text) is not str:
         raise TypeError("text must be a string")
-    c = 0
-    while c < len(text):
-        if text[c] in [':', '.', '?']:
-            print(text[c])
-            print()
-            c += 1
+    cpy = text
+    i = 0
+    flag = 0
+    while i < len(text):
+        if text[i] not in ".:?":
+            print(text[i], end="")
+            flag = 1
         else:
-            print(text[c], end='')
-        c += 1
+            if text[i] == '.':
+                print(".", end="")
+            if text[i] == '?':
+                print("?", end="")
+            if text[i] == ':':
+                print(":", end="")
+            if flag == 1:
+                i += 1
+                print(text[i])
+            flag = 0
+            print(text[i])
+            print()
+        i += 1
