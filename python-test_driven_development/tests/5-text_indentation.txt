@@ -16,8 +16,6 @@ Using ``text_indentation(text)``
     Traceback (most recent call last):
     TypeError: text must be a string
 
-    >>> text_indentation("Hi\nBye")
+    >>> text_indentation("Hi?")
     Hi
-    <BLANKLINE>
-    Bye
     <BLANKLINE>
