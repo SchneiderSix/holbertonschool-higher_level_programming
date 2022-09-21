@@ -17,5 +17,5 @@ Using ``text_indentation(text)``
     TypeError: text must be a string
 
     >>> text_indentation("Hi?")
-    Hi
+    Hi?
     <BLANKLINE>
