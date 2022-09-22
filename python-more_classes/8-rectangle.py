@@ -4,8 +4,6 @@ Defines a Rectangle class.
 """
 
 
-from pickle import _ReducedType
-
 
 class Rectangle:
     """Rectangle class defined by width and height."""
