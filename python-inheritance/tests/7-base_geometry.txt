@@ -38,3 +38,21 @@ Using ``BaseGeometry``
     >>> a.integer_validator('M', None)
     Traceback (most recent call last):
     TypeError: M must be an integer
+
+    >>> a = BaseGeometry()
+    >>> a.integer_validator('M', 1)
+
+    >>> a = BaseGeometry()
+    >>> a.integer_validator('M', (4,))
+    Traceback (most recent call last):
+    TypeError: M must be an integer
+
+    >>> a = BaseGeometry()
+    >>> a.integer_validator('M', True)
+    Traceback (most recent call last):
+    TypeError: M must be an integer
+
+    >>> a = BaseGeometry()
+    >>> a.integer_validator('M', {3, 4})
+    Traceback (most recent call last):
+    TypeError: M must be an integer
