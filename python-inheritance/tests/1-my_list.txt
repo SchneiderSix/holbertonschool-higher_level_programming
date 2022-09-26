@@ -27,3 +27,7 @@ Using ``MyList``
 
     >>> my_list.print_sorted()
     ['c', 'e', 'i', 'n']
+
+    >>> my_list = MyList([11, 2, 6])
+    >>> my_list
+    [2, 6, 11]
