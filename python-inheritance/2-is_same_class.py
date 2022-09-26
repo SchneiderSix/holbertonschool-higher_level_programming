@@ -5,4 +5,10 @@ Module is_same_class
 
 
 def is_same_class(obj, a_class):
+    """a
+    a
+    a
+    a
+    a
+    """
     return isinstance(obj, a_class)
