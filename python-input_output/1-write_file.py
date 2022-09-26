@@ -9,6 +9,6 @@ def number_of_lines(filename=""):
     Args:
         filename (str): name of file to be opened
     """
-    with open(filename, encoding='utf-8') as op:
+    with open(filename, mode="r", encoding='utf-8') as op:
         x = len(op.readline())
     return x
