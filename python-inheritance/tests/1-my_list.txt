@@ -31,3 +31,13 @@ Using ``MyList``
     >>> my_list = MyList([11, 2, 6])
     >>> my_list
     [11, 2, 6]
+
+    >>> my_list = MyList()
+    >>> print(my_list)
+    []
+
+    >>> my_list.print_sorted()
+    []
+
+    >>> print(my_list)
+    []
