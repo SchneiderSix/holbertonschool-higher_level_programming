@@ -25,6 +25,6 @@ Using ``MyList``
     >>> my_list.print_sorted()
     ['c', 'e', 'i', 'n']
 
-     >>> new_list = Mylist()
+     >>> new_list = MyList()
      >>> new_list.print_sorted()
      [] 
