@@ -10,6 +10,12 @@ def append_write(filename="", text=""):
     a
     a
     a
+    a
+    a
+    a
+    a
+    a
+    a
     a"""
     with open(filename, mode="w", encoding="utf-8") as wf:
         wf.write(text)
