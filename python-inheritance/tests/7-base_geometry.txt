@@ -17,7 +17,7 @@ Using ``BaseGeometry``
     >>> a = BaseGeometry()
     >>> a.integer_validator()
     Traceback (most recent call last):
-    TypeError: BaseGeometry() takes no arguments
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
     >>> a = BaseGeometry()
     >>> a.integer_validator('M', 0)
