@@ -1,0 +1,41 @@
+The ``7-base_geometry`` module
+======================
+
+Using ``BaseGeometry``
+-------------------
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+    >>> a = BaseGeometry()
+    >>> a.area()
+    Traceback (most recent call last):
+    Exception: area() is not implemented
+
+    >>> a = BaseGeometry(6)
+    >>> a.area()
+    Traceback (most recent call last):
+    TypeError: BaseGeometry() takes no arguments
+
+    >>> a = BaseGeometry()
+    >>> a.integer_validator()
+    Traceback (most recent call last):
+    TypeError: BaseGeometry() takes no arguments
+
+    >>> a = BaseGeometry()
+    >>> a.integer_validator('M', 0)
+    Traceback (most recent call last):
+    ValueError: M must be greater than 0
+
+    >>> a = BaseGeometry()
+    >>> a.integer_validator('M', -1)
+    Traceback (most recent call last):
+    ValueError: M must be greater than 0
+
+    >>> a = BaseGeometry()
+    >>> a.integer_validator('M', [3])
+    Traceback (most recent call last):
+    TypeError: M must be an integer
+
+    >>> a = BaseGeometry()
+    >>> a.integer_validator('M', None)
+    Traceback (most recent call last):
+    TypeError: M must be an integer
