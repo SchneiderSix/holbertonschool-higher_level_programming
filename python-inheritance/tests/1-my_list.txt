@@ -32,12 +32,6 @@ Using ``MyList``
     >>> my_list
     [11, 2, 6]
 
-    >>> my_list = MyList()
-    >>> print(my_list)
-    []
-
-    >>> my_list.print_sorted()
-    []
-
-    >>> print(my_list)
-    []
+    >>> m = MyList(None)
+    Traceback (most recent call last):
+    TypeError: 'bool' object is not iterable
