@@ -35,3 +35,8 @@ Using ``MyList``
     >>> m = MyList(None)
     Traceback (most recent call last):
     TypeError: 'NoneType' object is not iterable
+
+    >>> new_nl = MyList()
+
+    >>> new_nl.print_sorted()
+    []
