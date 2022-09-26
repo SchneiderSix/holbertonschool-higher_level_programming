@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module is_kind_of_class
+Module base_geometry
 """
 
 
