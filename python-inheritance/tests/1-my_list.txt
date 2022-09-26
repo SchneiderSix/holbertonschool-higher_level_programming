@@ -9,6 +9,9 @@ Using ``MyList``
     >>> my_list
     []
 
+    >>> my_list.print_sorted()
+    []
+
     >>> my_list.append(1)
     >>> my_list.append(3)
     >>> my_list.append(2)
@@ -24,5 +27,3 @@ Using ``MyList``
 
     >>> my_list.print_sorted()
     ['c', 'e', 'i', 'n']
-
-
