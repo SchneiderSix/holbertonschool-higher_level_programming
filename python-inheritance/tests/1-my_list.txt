@@ -24,3 +24,7 @@ Using ``MyList``
 
     >>> my_list.print_sorted()
     ['c', 'e', 'i', 'n']
+
+     >>> nl = Mylist()
+     >>> nl.print_sorted()
+     [] 
