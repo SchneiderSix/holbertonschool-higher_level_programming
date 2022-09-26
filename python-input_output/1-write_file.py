@@ -5,7 +5,7 @@ Module write_file
 
 
 def number_of_lines(filename=""):
-    """Return the num of lines in a file.
+    """Returns the number of lines in a text file.
     Args:
         filename (str): name of file to be opened
     """
