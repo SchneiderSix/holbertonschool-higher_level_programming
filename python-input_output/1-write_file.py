@@ -4,8 +4,11 @@ Module write_file
 """
 
 
-def append_write(filename="", text=""):
-    """Put text into file"""
-    with open(filename, mode="w", encoding="utf-8") as wf:
-        wf.write(text)
-        return text.count()
+def number_of_lines(filename=""):
+    """Return the num of lines in a file.
+    Args:
+        filename (str): name of file to be opened
+    """
+    with open(filename, encoding='utf-8') as op:
+        x = len(op.readline())
+    return x
