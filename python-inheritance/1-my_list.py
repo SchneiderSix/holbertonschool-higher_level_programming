@@ -8,5 +8,8 @@ class MyList(list):
     """Class inherits from list"""
     def print_sorted(self):
         """Prints sorted list"""
-        cpy = sorted(self.copy())
+        if list:
+            cpy = sorted(self.copy())
+        else:
+            cpy = ''
         print(cpy)
