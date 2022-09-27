@@ -13,11 +13,13 @@ class Student:
         sd = self.__dict__
         nd = dict()
 
-        for ele in attrs:
-            if type(attrs) is not str:
+        if type(attrs) is list:
+            for ele in attrs:
+                if type(attrs) is not str:
                     return sd
 
-            if ele in sd:
-                nd += sd[ele]
+                if ele in sd:
+                    nd[ele] = sd[ele]
 
-        return nd
+            return nd
+
