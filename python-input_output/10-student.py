@@ -13,7 +13,9 @@ class Student:
         sd = self.__dict__
         nd = dict()
 
-        if type(attrs) is list:
+        if type(attrs) is not list:
+            return sd
+        else:
             for ele in attrs:
                 if type(attrs) is not str:
                     return sd
@@ -22,4 +24,3 @@ class Student:
                     nd += sd[ele]
 
             return nd
-        return sd
