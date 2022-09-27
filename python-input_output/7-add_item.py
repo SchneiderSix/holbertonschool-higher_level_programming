@@ -18,6 +18,6 @@ if os.path.exists(fp) and os.path.getsize(fp) > 0:
     li = load_from_json_file(fp)
 
 if len(sys.argv) > 1:
-    for ele in len(sys.argv[1:]):
+    for ele in sys.argv[1:]:
         li.append(ele)
 save_to_json_file(li, fp)
