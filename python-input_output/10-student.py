@@ -14,7 +14,7 @@ class Student:
         nd = dict()
         if type(attrs) is list:
             for ele in attrs:
-                if type(attrs) != str:
+                if type(attrs) is not str:
                     return sd
                 if ele in sd:
                     nd[ele] = sd[ele]
