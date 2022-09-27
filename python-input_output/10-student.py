@@ -21,4 +21,3 @@ class Student:
                 if hasattr(self, ele):
                     nd[ele] = getattr(self, ele)
             return nd
-
