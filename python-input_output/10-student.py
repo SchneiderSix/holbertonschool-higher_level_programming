@@ -11,7 +11,10 @@ class Student:
 
     def to_json(self, attrs=None):
         sd = self.__dict__
-        nd = dict()
+        nd = {}
+
+        if attrs is None:
+            return sd
 
         if type(attrs) is list:
             for ele in attrs:
