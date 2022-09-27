@@ -4,6 +4,6 @@
 
 def append_write(filename="", text=""):
     """Write file"""
-    with open(filename, 'w') as f:
+    with open(filename, 'w+') as f:
         f.write(text)
-        return count(text)
+        return text.count()
