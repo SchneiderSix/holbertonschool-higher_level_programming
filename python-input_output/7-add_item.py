@@ -19,5 +19,5 @@ if os.path.exists(fp) and os.path.getsize(fp) > 0:
 
 if len(sys.argv) > 1:
     for ele in len(sys.argv[1:]):
-        li.append(i)
+        li.append(ele)
 save_to_json_file(li, fp)
