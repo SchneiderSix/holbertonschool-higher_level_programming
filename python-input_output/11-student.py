@@ -22,6 +22,5 @@ class Student:
                     nd[ele] = getattr(self, ele)
             return nd
 
-def reload_from_json(self, json):
-
-    self.__dict__.update(json)
+    def reload_from_json(self, json):
+        self.__dict__.update(json)
