@@ -12,10 +12,12 @@ class Student:
     def to_json(self, attrs=None):
         sd = self.__dict__
         nd = dict()
+
         if type(attrs) is list:
             for ele in attrs:
                 if type(attrs) is not str:
                     return sd
+
                 if ele in sd:
                     nd[ele] = sd[ele]
             return nd
