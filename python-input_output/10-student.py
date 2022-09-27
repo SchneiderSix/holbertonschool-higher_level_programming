@@ -19,6 +19,7 @@ class Student:
                     return sd
 
                 if ele in sd:
-                    nd[ele] = sd[ele]
+                    nd += sd[ele]
+
             return nd
         return sd
