@@ -18,7 +18,7 @@ class Student:
 
         if type(attrs) is list:
             for ele in attrs:
-                if hasattr(self, ele)
+                if hasattr(self, ele):
                     nd[ele] = getattr(self, ele)
             return nd
 
