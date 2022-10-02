@@ -50,5 +50,5 @@ class Rectangle(Base):
 
     @property
     def y_getter(self):
-         """Getter for y"""
+        """Getter for y"""
         return self.__y
