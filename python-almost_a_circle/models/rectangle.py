@@ -95,11 +95,11 @@ class Rectangle(Base):
         """Dictionary key/value to attributes"""
         if args[0]:
             self.id = args[0]
-        if args[1]:
+        if len(args) > 1:
             self.__width = args[1]
-        if args[2]:
+        if len(args) > 2:
             self.__height = args[2]
-        if args[3]:
+        if len(args) > 3:
             self.__x = args[3]
-        if args[4]:
+        if len(args) > 4:
             self.__y = args[4]
