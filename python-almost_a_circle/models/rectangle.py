@@ -16,10 +16,10 @@ class Rectangle(Base):
         super().__init__(id)
 
     @width.setter
-    def width_setter(self, width):
+    def width_setter(self, value):
         """Setter for width"""
 
-        self.__width = width
+        self.__width = value
 
     @property
     def width_getter(self):
@@ -28,10 +28,10 @@ class Rectangle(Base):
         return self.__width
 
     @height.setter
-    def height_setter(self, height):
+    def height_setter(self, value):
         """Setter for height"""
 
-        self.__height = height
+        self.__height = value
 
     @property
     def height_getter(self):
@@ -40,10 +40,10 @@ class Rectangle(Base):
         return self.__height
 
     @x.setter
-    def x_setter(self, x):
+    def x_setter(self, value):
         """Setter for x"""
 
-        self.__x = x
+        self.__x = value
 
     @property
     def x_getter(self):
@@ -52,10 +52,10 @@ class Rectangle(Base):
         return self.__x
 
     @y.setter
-    def y_setter(self, y):
+    def y_setter(self, value):
         """Setter for y"""
 
-        self.__y = y
+        self.__y = value
 
     @property
     def y_getter(self):
