@@ -77,10 +77,14 @@ class Rectangle(Base):
 
     def display(self):
         """Print Rectangle"""
-        for i in range(self.__height):
-            for i in range(self.__width):
-                print("#", end="")
-            print()
+    for zix in range(self.__x):
+        print()
+    for i in range(self.__height):
+        for ziy in range(self.__y):
+            print(" ", end="")
+        for j in range(self.__width):
+            print("#", end="")
+        print()
 
     def __str__(self):
         """Return Class represent str"""
