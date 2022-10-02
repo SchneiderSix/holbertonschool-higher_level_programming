@@ -77,10 +77,10 @@ class Rectangle(Base):
 
     def display(self):
         """Print Rectangle"""
-        for zix in range(self.__y):
+        for ziy in range(self.__y):
             print()
         for i in range(self.__height):
-            for ziy in range(self.__x):
+            for zix in range(self.__x):
                 print(" ", end="")
             for j in range(self.__width):
                 print("#", end="")
@@ -105,7 +105,7 @@ class Rectangle(Base):
             if len(args) > 4:
                 self.__y = args[4]
         else:
-            for key,value in kwargs.items():
+            for key, value in kwargs.items():
                 if key == "id":
                     self.id = value
                 if key == "width":
