@@ -91,7 +91,7 @@ class Rectangle(Base):
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - \
 {self.__width}/{self.__height}"
 
-    update(self, *args, **kwargs):
+    def update(self, *args, **kwargs):
         """Dictionary key/value to attributes"""
         if args:
             if args[0]:
