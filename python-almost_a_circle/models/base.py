@@ -19,6 +19,6 @@ class Base:
     def to_json_string(list_dictionaries):
         """Static Method json of dict rep"""
         if list_dictionaries is None or len(list_dictionaries) == 0:
-            return []
+            return "[]"
         else:
             return str(json.dumps(list_dictionaries))
