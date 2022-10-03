@@ -27,7 +27,13 @@ class Base:
     def save_to_file(cls, list_objs):
         """Json string to file"""
         if list_objs is not None:
-            list_objs = [obj.to_dictionary() for obj in list_objs]
+            list_objs = [ele.to_dictionary() for ele in list_objs]
         with open("{}.json".format(cls.__name__), "w") \
                 as fp:
             fp.write(cls.to_json_string(list_objs))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Return list represented by json_string"""
+        if json_string is None or len(json_string) == 0:
+            return "[]"
