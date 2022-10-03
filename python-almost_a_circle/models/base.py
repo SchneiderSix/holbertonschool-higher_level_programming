@@ -29,4 +29,4 @@ class Base:
             with open(cls.json, 'w+') as fp:
                 fp.write([])
         with open(cls.json, 'w+') as fp:
-                fp.write(json.dumps(list_objs))
+                fp.write(to_json_string(list_objs))
