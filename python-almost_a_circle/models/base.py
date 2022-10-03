@@ -20,4 +20,4 @@ class Base:
         """Static Method json of dict rep"""
         if not list_dictionaries:
             return []
-        return list(json.dumps(list_dictionaries))
+        return str(json.dumps(list_dictionaries))
