@@ -58,6 +58,7 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """List of instances"""
+        el = []
         filen = cls.__name__ + ".json"
         if os.path.exists(filen):
             with open(filen) as fp:
@@ -67,4 +68,4 @@ class Base:
                     li.append(cls.create(**ele))
                 return li
         else:
-            return "[]"
+            return el
