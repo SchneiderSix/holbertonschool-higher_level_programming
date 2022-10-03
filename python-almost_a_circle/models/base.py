@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module Base"""
 import json
+import os.path
 
 
 class Base:
@@ -53,3 +54,17 @@ class Base:
             return ni
         else:
             pass
+
+    @classmethod
+    def load_from_file(cls):
+        """List of instances"""
+        filen = cls.__name__ + ".json"
+        if os.path.exists(filen):
+            with open(filen) as fp:
+                li = []
+                ob = cls.from_json_string(fp.read())
+                for ele in ob:
+                    li.append(cls.create(**ele))
+                return li
+        else:
+            return "[]"
