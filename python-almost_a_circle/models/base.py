@@ -47,7 +47,7 @@ class Base:
             ni = cls(1, 1)
             ni.update(**dictionary)
             return ni
-        if cls.__name__  == 'Square':
+        if cls.__name__ == 'Square':
             ni = cls(1)
             ni.update(**dictionary)
             return ni
