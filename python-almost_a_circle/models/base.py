@@ -28,5 +28,6 @@ class Base:
         if list_objs is None:
             with open(cls.json, 'w+') as fp:
                 fp.write([])
-        with open(cls.json, 'w+') as fp:
+        else:
+            with open(cls.json, 'w+') as fp:
                 fp.write(to_json_string(list_objs))
