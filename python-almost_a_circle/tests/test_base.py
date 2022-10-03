@@ -7,7 +7,7 @@ from models.rectangle import Rectangle
 from models.square import Square
 
 
-class TestBase(unittest, TestCase):
+class TestBase(unittest.TestCase):
     """Test class"""
     def test_none(self):
         b = Base(None)
