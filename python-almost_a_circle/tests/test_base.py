@@ -10,6 +10,7 @@ from models.square import Square
 class TestBase(unittest.TestCase):
     """Test class"""
     def test_id(self):
+        """Test id"""
         b = Base(None)
         self.assertEqual(base.id, 1)
         b = Base()
