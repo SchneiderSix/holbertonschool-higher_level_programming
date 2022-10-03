@@ -39,3 +39,17 @@ class Base:
         if json_string is None or len(json_string) == 0:
             return al
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Return instance with att"""
+        if cls.__name__ == 'Rectangle':
+            ni = cls(1, 1)
+            ni.update(**dictionary)
+            return ni
+        if cls.__name__  == 'Square':
+            ni = cls(1)
+            ni.update(**dictionary)
+            return ni
+        else:
+            pass
