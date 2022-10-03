@@ -20,5 +20,4 @@ class Base:
         """Static Method json of dict rep"""
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
-        ret = json.dumps(list_dictionaries)
-        return ret
+        return json.dumps(list_dictionaries)
