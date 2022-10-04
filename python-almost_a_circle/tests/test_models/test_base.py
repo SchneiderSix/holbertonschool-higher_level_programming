@@ -12,12 +12,12 @@ class TestClassBase(unittest.TestCase):
         self.base1 = Base()
 
     def test_id_change(self):
-        _base = Base(None)
-        self.assertEqual(self.base1.id, 1)
-        _base = Base()
-        self.assertEqual(self.base1.id, 2)
-        _base = Base(6)
-        self.assertEqual(self.base1.id, 6)
+        xbase = Base(None)
+        self.assertEqual(self.xbase.id, 1)
+        xbase = Base()
+        self.assertEqual(self.xbase.id, 2)
+        xbase = Base(6)
+        self.assertEqual(self.xbase.id, 6)
 
 if __name__ == '__main__':
     unittest.main()
