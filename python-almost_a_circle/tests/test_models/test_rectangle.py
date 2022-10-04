@@ -43,14 +43,5 @@ class TestRectangle(unittest.TestCase):
     def test_stri_form(self):
         self.assertEqual(self.r4.__str__(), '[Rectangle] (5) 3/4 - 1/2')
 
-    def test_disp(self):
-        self.r5 = Rectangle(2, 4, 0, 0)
-        self.r6 = Rectangle(2, 4, 1, 0)
-        self.r7 = Rectangle(2, 4, 0, 1)
-        self.assertEqual(self.r5.display(), None)
-
-    def test_dic(self):
-        self.assertEqual(self.r4.to_dictionary(), {'id': 5, 'width': 1, 'height': 2, 'x': 3, 'y': 4})
-
 if __name__ == '__main__':
     unittest.main()
