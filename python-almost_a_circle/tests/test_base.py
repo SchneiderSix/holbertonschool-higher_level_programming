@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """Module Test Base"""
+
+
 import unittest
 from models.base import Base
-from models.rectangle import Rectangle
-from models.square import Square
 
 
 class TestBase(unittest.TestCase):
@@ -17,5 +17,3 @@ class TestBase(unittest.TestCase):
         b = Base(6)
         self.assertEqual(base.id, 6)
 
-if __name__ == '__main__':
-    unittest.main()
