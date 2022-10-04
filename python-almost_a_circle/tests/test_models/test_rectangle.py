@@ -47,10 +47,10 @@ class TestRectangle(unittest.TestCase):
         with patch('sys.stdout', new=StringIO()) as outp:
             r3.display()
         self.assertEqual(outp.getvalue(), '#\n')
-        r3 = Rectangle(1, 1)
-        with patch('sys.stdout', new=StringIO()) as outp:
-            r3.display()
-        self.assertEqual(outp.getvalue(), '#\n')
+        r4 = Rectangle(1, 2, 0, 1, 2)
+        with patch('sys.stdout', new=StringIO()) as out4:
+            r4.display()
+        self.assertEqual(out4.getvalue(), '\n#\n#\n')
 
 
 if __name__ == '__main__':
