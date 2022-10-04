@@ -10,8 +10,9 @@ from models.rectangle import Rectangle
 
 class TestRectangle(unittest.TestCase):
     """Testing Rectangle"""
-    def setUp(self):
-        self.rec = Rectangle(1, 2, 3, 4, 5)
+    def test_exists(self):
+        rec = Rectangle(1, 2, 3, 4, 5)
+        self.assertEqual(rec.id, 5)
 
     def test_arearect_str_dic(self):
         self.r1 = Rectangle(1, 2)
@@ -43,6 +44,10 @@ class TestRectangle(unittest.TestCase):
 
     def test_disp(self):
         r3 = Rectangle(1, 1, 0, 0)
+        with patch('sys.stdout', new=StringIO()) as outp:
+            r3.display()
+        self.assertEqual(outp.getvalue(), '#\n')
+        r3 = Rectangle(1, 1)
         with patch('sys.stdout', new=StringIO()) as outp:
             r3.display()
         self.assertEqual(outp.getvalue(), '#\n')
