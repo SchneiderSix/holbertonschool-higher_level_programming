@@ -39,9 +39,9 @@ class TestRectangle(unittest.TestCase):
 
     def test_disp(self):
         self.r3 = Rectangle(1, 1)
-        self.assertEqual(print(self.r3.display()), '#')
-        self.r3 = Rectangle(1, 1, 1)
-        self.assertEqual(print(self.r3.display()), ' #')
+        self.assertEqual(r3.display(), '#')
+        self.r4 = Rectangle(1, 1, 1)
+        self.assertEqual(r4.display(), ' #')
 
 if __name__ == '__main__':
     unittest.main()
