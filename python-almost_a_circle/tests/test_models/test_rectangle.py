@@ -8,9 +8,11 @@ from models.rectangle import Rectangle
 
 class TestRectangle(unittest.TestCase):
     """Testing Rectangle"""
+    def setUp(self):
+        self.rec = Rectangle(1, 2, 3, 4, 5)
+
     def test_arearect_str_dic(self):
         self.r1 = Rectangle(1, 2)
-        self.r2 = Rectangle(1, 2, 3, 4, 5)
         self.assertEqual(self.r1.area(), 2)
         self.assertEqual(self.r1.__str__(), '[Rectangle] (17) 0/0 - 1/2')
         self.assertEqual(self.r1.to_dictionary(), {'id': 17, 'width': 1, 'height': 2, 'x': 0, 'y': 0})
@@ -39,9 +41,10 @@ class TestRectangle(unittest.TestCase):
 
     def test_disp(self):
         r3 = Rectangle(1, 1, 0, 0)
-        self.assertEqual(r3.display(), None)
-        r4 = Rectangle(1, 1, 1, 0)
-        self.assertEqual(r4.display(), None)
+        disp = "#\n"
+        _out = self.out_c(r3)
+        self.assertEqual(_out, disp)
+
 
 if __name__ == '__main__':
     unittest.main()
