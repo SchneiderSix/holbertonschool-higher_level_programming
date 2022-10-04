@@ -38,9 +38,9 @@ class TestRectangle(unittest.TestCase):
             Rectangle(1, 2, 3, -4)
 
     def test_disp(self):
-        r3 = Rectangle(1, 1)
+        r3 = Rectangle(1, 1, 0, 0)
         self.assertEqual(r3.display(), '#\n')
-        r4 = Rectangle(1, 1, 1)
+        r4 = Rectangle(1, 1, 1, 0)
         self.assertEqual(r4.display(), ' #\n')
 
 if __name__ == '__main__':
