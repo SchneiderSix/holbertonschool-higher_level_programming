@@ -88,6 +88,9 @@ class TestRectangle(unittest.TestCase):
         Rectangle.save_to_file(emlii)
         with open("Rectangle.json") as fp2:
             self.assertEqual('[]', fp2.read())
+        Rectangle.save_to_file(None)
+        with open("Rectangle.json") as fp:
+            self.assertEqual('[]', fp.read())
 
 if __name__ == '__main__':
     unittest.main()
