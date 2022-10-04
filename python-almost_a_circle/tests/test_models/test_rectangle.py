@@ -81,5 +81,6 @@ class TestRectangle(unittest.TestCase):
         Rectangle.save_to_file([rect1, rect2])
         lf = Rectangle.load_from_file()
         self.assertEqual(print(lf), '[<__main__.Rectangle object at 0x7f1de47f5610>, <__main__.Rectangle object at 0x7f1de47f5700>]')
+
 if __name__ == '__main__':
     unittest.main()
