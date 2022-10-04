@@ -39,7 +39,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_disp(self):
         r3 = Rectangle(1, 1, 0, 0)
-        self.assertEqual(r3.display(), '#\n')
+        self.assertEqual(r3.display(), 'None')
         r4 = Rectangle(1, 1, 1, 0)
         self.assertEqual(r4.display(), ' #\n')
 
