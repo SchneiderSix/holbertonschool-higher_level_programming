@@ -57,11 +57,11 @@ class TestRectangle(unittest.TestCase):
         r5.update(6, 9)
         self.assertEqual(r5.__str__(), '[Rectangle] (6) 0/0 - 9/6')
         r6 = Rectangle(1, 2, 0, 1, 2)
+        r6.update(**{ 'id': 89, 'x': -1})
+        self.assertEqual(r6.__str__(), '[Rectangle] (89) -1/1 - 1/2')
         r7 = Rectangle(3, 2, 1)
         r7.update("choripan", None, None)
         self.assertEqual(r7.__str__(), '[Rectangle] (choripan) 1/0 - None/None')
-        with self.assertRaises(ValueError):
-            r6.update(**{ 'id': 89, 'x': -1})
         r8 = Rectangle(6, 4, id="nice")
         r8.update(None)
         self.assertEqual(r8.__str__(), '[Rectangle] (nice) 0/0 - 6/4')
