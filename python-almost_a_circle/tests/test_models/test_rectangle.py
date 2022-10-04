@@ -41,7 +41,7 @@ class TestRectangle(unittest.TestCase):
         r3 = Rectangle(1, 1, 0, 0)
         self.assertEqual(r3.display(), None)
         r4 = Rectangle(1, 1, 1, 0)
-        self.assertEqual(r4.display(), ' #\n')
+        self.assertEqual(r4.display(), None)
 
 if __name__ == '__main__':
     unittest.main()
