@@ -83,6 +83,7 @@ class TestRectangle(unittest.TestCase):
         lf = Rectangle.load_from_file()
         self.assertTrue(isinstance(lf, list))
 
+class TestChori(unittest.TestCase):
     def test_saveempty(self):
         emlii = []
         Rectangle.save_to_file(emlii)
