@@ -8,7 +8,7 @@ from models.rectangle import Rectangle
 
 class TestRectangle(unittest.TestCase):
     """Testing Rectangle"""
-    def setUp(self):
+    def test_arearect_str_dic(self):
         self.r1 = Rectangle(1, 2)
         self.assertEqual(self.r1.area(), 2)
         self.assertEqual(self.r1.__str__(), '[Rectangle] (1) 0/0 - 1/2')
