@@ -55,7 +55,7 @@ class TestRectangle(unittest.TestCase):
     def test_nice_update(self):
         r5 = Rectangle(3, 6)
         r5.update(6, 9)
-        self.assertEqual(r5.__str__(), '[Rectangle] (1) 0/0 - 6/9')
+        self.assertEqual(r5.__str__(), '[Rectangle] (6) 0/0 - 9/6')
         r6 = Rectangle(1, 2, 0, 1, 2)
         r7 = Rectangle(3, 2, 1)
         with self.assertRaises(ValueError):
