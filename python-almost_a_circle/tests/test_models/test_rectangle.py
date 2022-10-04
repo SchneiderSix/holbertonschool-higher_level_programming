@@ -52,6 +52,18 @@ class TestRectangle(unittest.TestCase):
             r4.display()
         self.assertEqual(out4.getvalue(), '\n#\n#\n')
 
+    def test_nice_update(self):
+        r5 = Rectangle(3, 6)
+        r5.update(6, 9)
+        self.assertEqual(r5.__str__(), '[Rectangle] (1) 0/0 - 6/9')
+        r6 = Rectangle(1, 2, 0, 1, 2)
+        r7 = Rectangle(3, 2, 1)
+        with self.assertRaises(ValueError):
+            r6.update(**{ 'id': 89, 'x': -1)
+            r7.update("choripan", None, None)
+        r8 = Rectangle(6, 4, id="nice")
+        r8.update(None)
+        self.assertEqual(r8.__str__(), '[Rectangle] (nice) 0/0 - 6/4')
 
 if __name__ == '__main__':
     unittest.main()
