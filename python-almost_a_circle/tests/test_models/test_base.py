@@ -6,8 +6,8 @@ import unittest
 from models.base import Base
 
 
-class TestBaseID(unittest.TestCase):
-    """Testing Base ID"""
+class TestBase(unittest.TestCase):
+    """Testing Base"""
     def setUp(self):
         self.b = Base()
 
@@ -19,6 +19,10 @@ class TestBaseID(unittest.TestCase):
 
     def test_ID_change_3(self):
         self.assertEqual(self.b.id, 3)
+
+    def test_ID_change_4(self):
+        self.b = Base(89)
+        self.assertEqual(self.b.id, 89)
 
 if __name__ == '__main__':
     unittest.main()
