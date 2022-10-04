@@ -59,7 +59,7 @@ class TestRectangle(unittest.TestCase):
         r6 = Rectangle(1, 2, 0, 1, 2)
         r7 = Rectangle(3, 2, 1)
         with self.assertRaises(ValueError):
-            r6.update(**{ 'id': 89, 'x': -1)
+            r6.update(**{ 'id': 89, 'x': -1})
             r7.update("choripan", None, None)
         r8 = Rectangle(6, 4, id="nice")
         r8.update(None)
