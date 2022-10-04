@@ -70,11 +70,6 @@ class TestRectangle(unittest.TestCase):
         cre = Rectangle.create(**{ 'id': 89, 'width': 1, 'height': 2, 'x': 3, 'y': 4 })
         self.assertEqual(cre.__str__(), '[Rectangle] (89) 3/4 - 1/2')
 
-    def test_saveempty(self):
-        Rectangle.save_to_file([])
-        with open("Rectangle.json") as fp2:
-            self.assertEqual(fp2.read(), '[]')
-
     def test_savetofilerec(self):
         Rectangle.save_to_file(None)
         with open("Rectangle.json") as fp:
