@@ -3,6 +3,8 @@
 
 
 import unittest
+from io import StringIO
+from unittest.mock import patch
 from models.rectangle import Rectangle
 
 
@@ -41,9 +43,9 @@ class TestRectangle(unittest.TestCase):
 
     def test_disp(self):
         r3 = Rectangle(1, 1, 0, 0)
-        disp = "#\n"
-        _out = self.out_c(r3)
-        self.assertEqual(_out, disp)
+        with patch('sys.stdout', new=StringIO()) as outp:
+            r3.display()
+        self.assertEqual(outp.getvalue(), '#\n')
 
 
 if __name__ == '__main__':
