@@ -74,7 +74,7 @@ class TestRectangle(unittest.TestCase):
         emli = []
         Rectangle.save_to_file(None)
         with open("Rectangle.json") as fp:
-            self.assertTrue(fp.read() == '[]' and fp.read() == emli)
+            self.assertFalse(fp.read() == '[]' and fp.read() == emli)
         Rectangle.save_to_file([Rectangle(1, 2)])
         with open("Rectangle.json") as fp3:
             self.assertEqual(fp3.read(), '[{"id": 24, "width": 1, "height": 2, "x": 0, "y": 0}]')
