@@ -66,5 +66,8 @@ class TestRectangle(unittest.TestCase):
         r8.update(None)
         self.assertEqual(r8.__str__(), '[Rectangle] (nice) 0/0 - 6/4')
 
+    def test_creation(self):
+        cre = Rectangle.create(**{ 'id': 89, 'width': 1, 'height': 2, 'x': 3, 'y': 4 })
+        self.assertEqual(cre.__str__(), '[Rectangle] (89) 3/4 - 1/2')
 if __name__ == '__main__':
     unittest.main()
