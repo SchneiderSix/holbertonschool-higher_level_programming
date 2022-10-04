@@ -6,18 +6,19 @@ import unittest
 from models.base import Base
 
 
-class TestClassBase(unittest.TestCase):
-    """Testing Base"""
+class TestBaseID(unittest.TestCase):
+    """Testing Base ID"""
     def setUp(self):
-        self.base1 = Base()
+        self.b = Base()
 
-    def test_id_change(self):
-        xbase = Base(None)
-        self.assertEqual(self.xbase.id, 1)
-        xbase = Base()
-        self.assertEqual(self.xbase.id, 2)
-        xbase = Base(6)
-        self.assertEqual(self.xbase.id, 6)
+    def test_ID_change_1(self):
+        self.assertEqual(self.b.id, 1)
+
+    def test_ID_change_2(self):
+        self.assertEqual(self.b.id, 2)
+
+    def test_ID_change_3(self):
+        self.assertEqual(self.b.id, 3)
 
 if __name__ == '__main__':
     unittest.main()
