@@ -37,5 +37,11 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaises(ValueError):
             Rectangle(1, 2, 3, -4)
 
+    def test_aarea_strformat_dict(self):
+        self.r5 = Rectangle(2, 2)
+        self.assertEqual(self.r5.area(), 4)
+        self.assertEqual(self.r5.__str__(), '[Rectangle] (1) 0/0 - 2/2')
+        self.assertEqual(self.r5.to_dictionary(), {'id': 1, 'width': 2, 'height': 2, 'x': 0, 'y': 0})
+
 if __name__ == '__main__':
     unittest.main()
