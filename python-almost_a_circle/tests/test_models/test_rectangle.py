@@ -12,7 +12,7 @@ class TestRectangle(unittest.TestCase):
         self.r1 = Rectangle(1, 2)
         self.assertEqual(self.r1.area(), 2)
         self.assertEqual(self.r1.__str__(), '[Rectangle] (17) 0/0 - 1/2')
-        self.assertEqual(self.r1.to_dictionary(), {'id': 1, 'width': 1, 'height': 2, 'x': 0, 'y': 0})
+        self.assertEqual(self.r1.to_dictionary(), {'id': 17, 'width': 1, 'height': 2, 'x': 0, 'y': 0})
 
     def test_rect_err(self):
         with self.assertRaises(TypeError):
