@@ -74,7 +74,7 @@ class TestRectangle(unittest.TestCase):
         re1 = Rectangle(1, 2, 0, 1, 2)
         Rectangle.save_to_file([re1])
         with open("Rectangle.json") as fp:
-            self.assertEqual(len(fp.read()), 52)
+            self.assertTrue(len(fp.read()) == 52)
 
 if __name__ == '__main__':
     unittest.main()
