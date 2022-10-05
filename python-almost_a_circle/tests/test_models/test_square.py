@@ -62,7 +62,7 @@ class TestSquare(unittest.TestCase):
 
     def test_creation(self):
         cre = Square.create(**{ 'id': 89, 'width': 1, 'height': 2, 'x': 3, 'y': 4 })
-        self.assertEqual(cre.__str__(), '[Square] (89) 3/4 - 1/2')
+        self.assertEqual(cre.__str__(), '[Square] (89) 3/4 - 1')
 
     def test_savetofilerec(self):
         Square.save_to_file(None)
