@@ -44,7 +44,7 @@ class TestSquare(unittest.TestCase):
         r4 = Square(1, 2, 1, 2)
         with patch('sys.stdout', new=StringIO()) as out4:
             r4.display()
-        self.assertEqual(out4.getvalue(), '\n#\n#\n')
+        self.assertEqual(out4.getvalue(), '\n  #\n')
 
     def test_nice_update(self):
         r5 = Square(3, 6)
