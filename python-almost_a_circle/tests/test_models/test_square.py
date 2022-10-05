@@ -50,7 +50,7 @@ class TestSquare(unittest.TestCase):
         r5 = Square(3, 6)
         r5.update(6, 9)
         self.assertEqual(r5.__str__(), '[Square] (6) 6/0 - 9')
-        r6 = Square(1, 2, 0, 1, 2)
+        r6 = Square(1, 2, 1, 2)
         r6.update(**{ 'id': 89, 'x': -1})
         self.assertEqual(r6.__str__(), '[Square] (89) -1/1 - 1/2')
         r7 = Square(3, 2, 1)
