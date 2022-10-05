@@ -17,7 +17,7 @@ class TestSquare(unittest.TestCase):
     def test_arearect_str_dic(self):
         self.r1 = Square(1, 2)
         self.assertEqual(self.r1.area(), 1)
-        self.assertEqual(self.r1.__str__(), '[Square] (17) 0/0 - 1/2')
+        self.assertEqual(self.r1.__str__(), '[Square] (17) 0/0 - 1')
         self.assertEqual(self.r1.to_dictionary(), {'id': 17, 'width': 1, 'height': 2, 'x': 0, 'y': 0})
 
     def test_rect_err(self):
