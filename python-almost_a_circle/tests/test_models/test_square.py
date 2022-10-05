@@ -57,7 +57,7 @@ class TestSquare(unittest.TestCase):
         r7 = Square(3, 2, 1)
         with self.assertRaises(TypeError):
             r7.update("choripan", None, None)
-        self.assertEqual(r7.__str__(), '[Square] (choripan) 1/0 - None/None')
+        self.assertEqual(r7.__str__(), '[Square] (choripan) 2/1 - 3')
         r8 = Square(6, 4, id="nice")
         r8.update(None)
         self.assertEqual(r8.__str__(), '[Square] (nice) 0/0 - 6/4')
