@@ -11,8 +11,8 @@ from models.square import Square
 class TestSquare(unittest.TestCase):
     """Testing Square"""
     def test_exists(self):
-        rec = Square(1, 2, 3, 4, 5)
-        self.assertEqual(rec.id, 5)
+        rec = Square(1, 2, 3, 4)
+        self.assertEqual(rec.id, 4)
 
     def test_arearect_str_dic(self):
         self.r1 = Square(1, 2)
