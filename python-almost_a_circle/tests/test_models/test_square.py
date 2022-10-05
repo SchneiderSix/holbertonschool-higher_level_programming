@@ -60,7 +60,7 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(r7.__str__(), '[Square] (choripan) 2/1 - 3')
         r8 = Square(6, 4, id="nice")
         r8.update(None)
-        self.assertEqual(r8.__str__(), '[Square] (nice) 0/0 - 6/4')
+        self.assertEqual(r8.__str__(), '[Square] (nice) 4/0 - 6')
 
     def test_creation(self):
         cre = Square.create(**{ 'id': 89, 'width': 1, 'height': 2, 'x': 3, 'y': 4 })
