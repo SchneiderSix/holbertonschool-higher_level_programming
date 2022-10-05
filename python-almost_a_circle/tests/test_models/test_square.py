@@ -41,7 +41,7 @@ class TestSquare(unittest.TestCase):
         with patch('sys.stdout', new=StringIO()) as outp:
             r3.display()
         self.assertEqual(outp.getvalue(), ' #\n')
-        r4 = Square(1, 2, 0, 1, 2)
+        r4 = Square(1, 2, 1, 2)
         with patch('sys.stdout', new=StringIO()) as out4:
             r4.display()
         self.assertEqual(out4.getvalue(), '\n#\n#\n')
