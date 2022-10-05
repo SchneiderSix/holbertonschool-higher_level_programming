@@ -27,9 +27,8 @@ class TestSquare(unittest.TestCase):
             Square(1, "2")
         with self.assertRaises(TypeError):
             Square(1, 2, "3")
-
-           squ1 = Square(1, 2, 3, "4")
-           self.assertEqual(squ1.__str__(), '[Square] (4) 2/3 - 1')
+        with self.assertRaises(IndentationError):
+            Square(1, 2, 3, "4")
         with self.assertRaises(ValueError):
             Square(-1, 2)
         with self.assertRaises(ValueError):
