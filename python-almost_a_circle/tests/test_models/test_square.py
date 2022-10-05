@@ -35,8 +35,6 @@ class TestSquare(unittest.TestCase):
             Square(0, 2)
         with self.assertRaises(ValueError):
             Square(1, 2, -3)
-        with self.assertRaises(ValueError):
-            Square(1, 2, 3, -4)
 
     def test_disp(self):
         r3 = Square(1, 1, 0, 0)
