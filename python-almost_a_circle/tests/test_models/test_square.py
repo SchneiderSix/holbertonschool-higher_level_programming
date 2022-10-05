@@ -76,7 +76,7 @@ class TestSquare(unittest.TestCase):
             self.assertEqual('[]', fp.read())
         Square.save_to_file([Square(1, 2)])
         with open("Square.json") as fp3:
-            self.assertEqual(fp3.read(), '[{"id": 24, "width": 1, "height": 2, "x": 0, "y": 0}]')
+            self.assertEqual(fp3.read(), '[{"id": 30, "x": 2, "size": 1, y": 0}]')
 
     def test_loadfromfilerec(self):
         Square.save_to_file([Square(1, 2)])
