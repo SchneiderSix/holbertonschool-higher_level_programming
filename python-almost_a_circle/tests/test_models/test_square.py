@@ -30,7 +30,7 @@ class TestSquare(unittest.TestCase):
         with self.assertRaises(IndentationError):
             Square(1, 2, 3, "4")
         with self.assertRaises(ValueError):
-            Square(-1, 2)
+            squ1 = Square(-1, 2)
         with self.assertRaises(ValueError):
             Square(1, -2)
         with self.assertRaises(ValueError):
