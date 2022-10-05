@@ -49,7 +49,7 @@ class TestSquare(unittest.TestCase):
     def test_nice_update(self):
         r5 = Square(3, 6)
         r5.update(6, 9)
-        self.assertEqual(r5.__str__(), '[Square] (6) 0/0 - 9/6')
+        self.assertEqual(r5.__str__(), '[Square] (6) 0/0 - 9')
         r6 = Square(1, 2, 0, 1, 2)
         r6.update(**{ 'id': 89, 'x': -1})
         self.assertEqual(r6.__str__(), '[Square] (89) -1/1 - 1/2')
