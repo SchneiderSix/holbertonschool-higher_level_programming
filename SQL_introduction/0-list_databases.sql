@@ -1,2 +1,2 @@
 -- lists all databases of your MySQL server
-SELECT name FROM databases
+SELECT name FROM sys.master_files
