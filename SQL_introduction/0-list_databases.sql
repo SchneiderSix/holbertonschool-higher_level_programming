@@ -1,1 +1,3 @@
-SELECT name FROM master.sys.databases
+SELECT [name]
+FROM master.dbo.sysdatabases
+WHERE dbid > 6
