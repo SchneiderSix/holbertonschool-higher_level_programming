@@ -3,7 +3,7 @@
 Module model_state
 """
 
-import MySQLdb
+import sqlalchemy
 
 Base = declarative_base()
 
