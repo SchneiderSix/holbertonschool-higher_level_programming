@@ -26,7 +26,8 @@ if __name__ == '__main__':
         for j in i:
             if i == cont[0]:
                 print(j, end='')
-            print(f", {j}", end='')
+            else:
+                print(f", {j}", end='')
     print()
     cursor.close()
     db.close()
