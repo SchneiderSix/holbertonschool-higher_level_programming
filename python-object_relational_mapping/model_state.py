@@ -9,6 +9,7 @@ from sqlalchemy.orm import relationship
 
 Base = declarative_base()
 
+
 class State(Base):
     """ORM Class"""
     __tablename__ = 'states'
