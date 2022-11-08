@@ -23,6 +23,6 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     ses = Session()
     ins = ses.query(State).get(2)
-    inst.name = 'New Mexico'
+    ins.name = 'New Mexico'
     ses.commit()
     ses.close()
