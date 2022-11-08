@@ -15,10 +15,11 @@ if __name__ == '__main__':
         print("Error")
 
     cursor = db.cursor()
-    cursor.execute("SELECT UPPER(*) FROM states WHERE name LIKE 'N%'")
+    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%'")
     cont = cursor.fetchall()
 
     for i in cont:
-        print(i)
+        if i[1].startswith("N"):
+            print(i)
 
     db.close()
