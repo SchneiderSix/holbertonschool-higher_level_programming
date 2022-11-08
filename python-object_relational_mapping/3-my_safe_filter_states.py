@@ -4,7 +4,7 @@ Module 3-my_safe_filter_states
 """
 
 import MySQLdb
-from sys import argv
+import sys
 
 if __name__ == '__main__':
     """Connect to database hbtn_0e_0_usa and list names
