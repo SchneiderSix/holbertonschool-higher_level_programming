@@ -25,7 +25,7 @@ if __name__ == '__main__':
     for i in cont:
         for j in i:
             print(j, end='')
-            if cont[i] != cont[i:-1]:
+            if cont[i] != cont[-1]:
                 print(", ", end='')
     print()
     cursor.close()
