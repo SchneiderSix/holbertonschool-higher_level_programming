@@ -25,6 +25,8 @@ if __name__ == '__main__':
     lou = State(name='Louisiana')
     ses.add(lou)
     ses.commit()
-    for i in ses.query(State).order_by(State.id).all():
-        print(f"{i.id}: {i.name}")
+    cont = ses.query(State).order_by(State.id)\
+        .filter(State.name == 'Louisiana').all()
+    if cont:
+        print(f"{cont[0].id}")
     ses.close()
