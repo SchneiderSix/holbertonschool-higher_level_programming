@@ -23,7 +23,7 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     ses = Session()
     cont = ses.query(State).order_by(State.id)\
-          .filter(State.name == argv[4]).all()
+           .filter(State.name == argv[4]).all()
     if cont:
         print(f"{cont[0].id}")
     else:
