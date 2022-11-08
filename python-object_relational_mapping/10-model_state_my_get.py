@@ -25,7 +25,7 @@ if __name__ == '__main__':
     cont = ses.query(State).order_by(State.id)\
           .filter(State.name == argv[4]).all()
     if cont:
-        print(f"{cont.id}")
+        print(f"{cont[0].id}")
     else:
         print("Not found")
     ses.close()
