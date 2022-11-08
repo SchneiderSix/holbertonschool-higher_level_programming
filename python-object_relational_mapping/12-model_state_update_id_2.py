@@ -22,14 +22,7 @@ if __name__ == '__main__':
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     ses = Session()
-    lou = State(name='Louisiana')
-    ses.add(lou)
+    ins = ses.query(State).get(2)
+    inst.name = 'New Mexico'
     ses.commit()
-    upd = ses.query(State).order_by(State.id)\
-        .filter(State.id == 2).all()
-    upd.name = 'Mexico'
-    ses.commit()
-    cont = ses.query(State).order_by(State.id).all()
-    for i in cont:
-        print(f"{i.id}: {i.name}")
     ses.close()
