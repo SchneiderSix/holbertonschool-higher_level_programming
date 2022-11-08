@@ -15,7 +15,7 @@ if __name__ == '__main__':
         print("Error")
 
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%'")
+    cursor.execute("SELECT UPPER(*) FROM states WHERE name LIKE 'N%'")
     cont = cursor.fetchall()
 
     for i in cont:
