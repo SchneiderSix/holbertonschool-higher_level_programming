@@ -25,7 +25,6 @@ if __name__ == '__main__':
     if ses == NULL:
         print("Nothing")
     else:
-        for i in ses.query(State).order_by(State.id).all():
+        for i in ses.query(State).order_by(State.id).first():
             print(f"{i.id}: {i.name}")
-            break
     ses.close()
