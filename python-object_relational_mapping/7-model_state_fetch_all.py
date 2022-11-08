@@ -23,5 +23,5 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     ses = Session()
     for i in ses.query(State).order_by(State.id).all():
-        print(f"{state.id}: {state.name}")
+        print(f"{i.id}: {i.name}")
     ses.close()
