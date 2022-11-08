@@ -22,7 +22,7 @@ if __name__ == '__main__':
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     ses = Session()
-    cont = ses.query(State).order_by(State.id).first():
+    cont = ses.query(State).order_by(State.id).first()
     if cont:
         print(f"{i.id}: {i.name}")
     else:
