@@ -24,7 +24,7 @@ if __name__ == '__main__':
     ses = Session()
     cont = ses.query(State).order_by(State.id).first()
     if cont:
-        print(f"{i.id}: {i.name}")
+        print(f"{cont.id}: {cont.name}")
     else:
         print("Nothing")
     ses.close()
