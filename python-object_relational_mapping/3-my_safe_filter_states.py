@@ -6,7 +6,7 @@ Module 3-my_safe_filter_states
 import MySQLdb
 from sys import argv
 
-if __name__ == '__main__':
+def inj():
     """Connect to database hbtn_0e_0_usa and list names
     starting with N, safe for sqlinjection"""
     if len(argv) == 5:
@@ -25,4 +25,6 @@ if __name__ == '__main__':
             print(i)
         db.close()
     else:
-        pass
+        return
+if __name__ == '__main__':
+    inj()
