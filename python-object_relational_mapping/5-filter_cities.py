@@ -23,6 +23,9 @@ if __name__ == '__main__':
     cont = cursor.fetchall()
 
     for i in cont:
-        print(i)
+        for j in i:
+            print(j, end='')
+        print(",", end='')
+    print()
     cursor.close()
     db.close()
