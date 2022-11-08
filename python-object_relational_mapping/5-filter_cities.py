@@ -24,8 +24,9 @@ if __name__ == '__main__':
 
     for i in cont:
         for j in i:
+            if i != 1 and i != len(cont):
+                print(", ")
             print(j, end='')
-        print(",", end='')
     print()
     cursor.close()
     db.close()
