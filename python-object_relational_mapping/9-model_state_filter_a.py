@@ -23,6 +23,6 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     ses = Session()
     for i in ses.query(State).order_by(State.id)\
-             .filter(State.name.like('%a%')).all():
+            .filter(State.name.like('%a%')).all():
         print(f"{i.id}: {i.name}")
     ses.close()
