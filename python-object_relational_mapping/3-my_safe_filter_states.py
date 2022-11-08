@@ -4,17 +4,21 @@ Module 3-my_safe_filter_states
 """
 
 import MySQLdb
-import sys
+from sys import argv
 
 if __name__ == '__main__':
     """Connect to database hbtn_0e_0_usa and list names
     starting with N, safe for sqlinjection"""
-    if len(sys.argv) == 5:
-        db = MySQLdb.connect(host="localhost", user=sys.argv[1], port=3306,
-                             passwd=sys.argv[2], db=sys.argv[3])
+    if len(argv) == 5:
+        try:
+            db = MySQLdb.connect(host="localhost", user=argv[1], port=3306,
+                                 passwd=argv[2], db=argv[3])
+        except Exception:
+            print("Error")
+
         cursor = db.cursor()
         cursor.execute("SELECT * FROM states WHERE \
-                        name LIKE BINARY '{}'".format(sys.argv[4]))
+                        name LIKE BINARY '{}'".format(argv[4]))
         cont = cursor.fetchall()
 
         for i in cont:
