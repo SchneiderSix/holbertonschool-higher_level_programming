@@ -24,6 +24,6 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     ses = Session()
     for i, j in ses.query(State, City)\
-               .filter(State.id == City.state_id).order_by(City.id):
+                .filter(State.id == City.state_id).order_by(City.id):
         print(f"{i.name}: ({j.id}) {j.name}")
     ses.close()
