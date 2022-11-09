@@ -9,7 +9,7 @@ from model_state import Base, State
 
 class City(Base):
     """ORM Class"""
-    __tablename__ = 'states'
+    __tablename__ = 'cities'
     id = Column(Integer, primary_key=True,
                 autoincrement=True, unique=True, nullable=False)
     name = Column(String(128), nullable=False)
