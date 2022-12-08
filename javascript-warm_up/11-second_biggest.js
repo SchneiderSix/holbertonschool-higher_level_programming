@@ -10,6 +10,6 @@ if (process.argv.length <= 3) {
       sec = fir;
       fir = i;
     }
+    console.log(sec);
   }
-  console.log(sec);
 }
