@@ -1,2 +1,4 @@
 #!/usr/bin/node
-exports.Rectangle = class {}
+exports.Rectangle = class {
+  constructor() {}
+};
