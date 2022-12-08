@@ -4,5 +4,5 @@ if (process.argv.length <= 3) {
   console.log(0);
 } else {
   const arr = process.argv.sort();
-  console.log(arr.prototype.at(-2));
+  console.log(arr.at(-2));
 }
