@@ -7,7 +7,7 @@ if (process.argv.length <= 3) {
     let fir = 0;
     let sec = 0;
     if (i > fir) {
-      sec = fir
+      sec = fir;
       fir = i;
     }
   }
