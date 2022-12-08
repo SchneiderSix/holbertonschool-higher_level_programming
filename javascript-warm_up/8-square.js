@@ -7,5 +7,5 @@ if (parseInt(process.argv[2]) > 0) {
     }
   }
 } else {
-  console.log('Missing size')
+  console.log('Missing size');
 }
