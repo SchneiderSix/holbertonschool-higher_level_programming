@@ -1,7 +1,8 @@
 #!/usr/bin/node
 exports.logMe = function (item) {
-  const len = parseInt(arguments.length);
-  for (let i = 0; i < len; i++) {
-    console.log(i + ': ' + arguments[i]);
+  for (let i = 0; i < arguments.length; i++) {
+    const n = 0;
+    console.log(n + ': ' + arguments[i]);
+    n += 1;
   }
 };
