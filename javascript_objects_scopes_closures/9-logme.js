@@ -1,6 +1,6 @@
 #!/usr/bin/node
 exports.logMe = function (item) {
-  for (let i = 0; i < item.length; i++) {
-    console.log(i + " : " + arguments[i + 2]);
+  for (let i = 0; i < arguments.length; i++) {
+    console.log(i + ": " + arguments[i + 2]);
   }
 };
