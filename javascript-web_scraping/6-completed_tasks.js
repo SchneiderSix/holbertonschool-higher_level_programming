@@ -6,15 +6,12 @@ request(process.argv[2], function (error, response, body) {
     console.log('statusCode:', response.statusCode);
   } else {
     const mydata = JSON.parse(body);
-    let mydict = [{}];
+    let mydict = {};
     for (const i of mydata) {
       if (i['completed'] === true) {
-        mydict.push({
-          key: i['userId'],
-          value: i['id']
-        });
+        console.log(i['userId']);
+        console.log(i['id']);
       }
     }
-    console.log(mydict);
   }
 });
