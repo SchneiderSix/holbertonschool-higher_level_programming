@@ -9,8 +9,8 @@ request(process.argv[2], function (error, response, body) {
     const mydict = {};
     let counter = 0;
     for (const i of mydata) {
-      const idcom = i["userId"];
-      if ((idcom === i["userId"]) && (i["completed"] === true)) {
+      const idcom = i.userId;
+      if ((idcom === i.userId) && (i.completed === true)) {
         if (!mydict[idcom]) {
           counter = 0;
         }
