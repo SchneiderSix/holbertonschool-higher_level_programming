@@ -1,5 +1,5 @@
 #!/usr/bin/node
-var fs = require('fs');
+const fs = require('fs');
 
 /* Read File */
 fs.readFile(arguments[0], bar)
