@@ -10,7 +10,7 @@ request(process.argv[2], function (error, response, body) {
     for (const i of mydata) {
       if (i['completed'] === true) {
         console.log(i['userId']);
-        console.log(i['id']);
+        console.log(i['completed']);
       }
     }
   }
