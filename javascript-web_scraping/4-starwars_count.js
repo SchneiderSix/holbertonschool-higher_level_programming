@@ -11,7 +11,7 @@ request(process.argv[2], function (error, response, body) {
       for (const j in i.characters) {
         if (j === 'https://swapi-api.hbtn.io/api/people/18/') {
         }
-        console.log(j);
+        console.log(i);
       }
     }
     console.log(c);
