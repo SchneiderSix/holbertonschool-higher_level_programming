@@ -7,11 +7,11 @@ request(process.argv[2], function (error, response, body) {
   } else {
     const mydata = JSON.parse(body);
     let c = 0;
-    for (const i in mydata.results) {
-      for (const j in i.characters) {
+    for (const i of mydata.results) {
+      for (const j of i.characters) {
         if (j === 'https://swapi-api.hbtn.io/api/people/18/') {
+          c += 1;
         }
-        console.log(i);
       }
     }
     console.log(c);
