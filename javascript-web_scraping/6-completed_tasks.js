@@ -10,8 +10,8 @@ request(process.argv[2], function (error, response, body) {
     let counter = 0;
     for (const i of mydata) {
       const idcom = i.userId;
-      if ((idcom === i.userId) && (i.completed === true)) {
-        if (!mydict[idcom]) {
+      if (i.completed === true) {
+        if ((!mydict[idcom]) && (counter != 0)) {
           counter = 0;
         }
         counter += 1;
