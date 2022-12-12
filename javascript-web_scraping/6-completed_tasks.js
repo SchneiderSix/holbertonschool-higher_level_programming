@@ -8,9 +8,11 @@ request(process.argv[2], function (error, response, body) {
     const mydata = JSON.parse(body);
     let mydict = {};
     let counter = 0;
+    let c = 0;
     for (const i of mydata) {
+      c += 1;
       let idcom = i['userId'];
-      if ((idcom === i['userId']) && (i['completed'] === true)) {
+      if ((c === i['userId']) && (i['completed'] === true)) {
         counter += 1;
         mydict[idcom] = counter;
       }
