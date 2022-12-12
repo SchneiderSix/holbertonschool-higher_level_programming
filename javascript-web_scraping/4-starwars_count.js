@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const request = require('request');
-request('https://swapi-api.hbtn.io/api/films/', function (error, response, body) {
+request(process.argv[2], function (error, response, body) {
   if (error) {
     console.error('error:', error);
     console.log('statusCode:', response.statusCode);
@@ -9,7 +9,7 @@ request('https://swapi-api.hbtn.io/api/films/', function (error, response, body)
     let c = 0;
     for (const i in mydata.results) {
       for (const j in i.characters) {
-        if (j.endsWith('/18/')) {
+        if (j === 'https://swapi-api.hbtn.io/api/people/18/') {
           c += 1;
         }
       }
