@@ -5,13 +5,14 @@ request('https://swapi-api.hbtn.io/api/films/', function (error, response, body)
     console.error('error:', error);
   } else {
     if (response.statusCode === 200) {
-        char_list = JSON.parse(body).characters;
-        let c = 0;
-        for (const i in char_list) {
-          if (i === 'https://swapi-api.hbtn.io/api/people/18/') {
+      const all_data = JSON.parse(body);
+      let c = 0;
+      for (const i in all_data.results()) {
+        for (const j in i.characters)
+          if (j === 'https://swapi-api.hbtn.io/api/people/18/') {
             c += 1;
           }
-        }
+      }
       console.log(c);
     }
   }
