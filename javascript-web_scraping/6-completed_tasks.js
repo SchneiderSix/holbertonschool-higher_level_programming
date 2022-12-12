@@ -6,18 +6,16 @@ request(process.argv[2], function (error, response, body) {
     console.log('statusCode:', response.statusCode);
   } else {
     const mydata = JSON.parse(body);
-    let mydict = {};
+    const mydict = {};
     let counter = 0;
-    let flag = false;
     for (const i of mydata) {
-      let idcom = i['userId'];
-      if ((idcom === i['userId']) && (i['completed'] === true)) {
-        if ((flag === true) && (!mydict[idcom])) {
+      const idcom = i["userId"];
+      if ((idcom === i["userId"]) && (i["completed"] === true)) {
+        if (!mydict[idcom]) {
           counter = 0;
         }
         counter += 1;
         mydict[idcom] = counter;
-        flag = true;
       }
     }
     console.log(mydict);
