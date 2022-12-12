@@ -1,3 +1,9 @@
 #!/usr/bin/node
-const w = window.open(arguments[0]);
-console.log(w);
+const fs = require('fs');
+fs.readFile(process.argv[2], 'utf8', function (err, data) {
+  if (err) {
+    console.error(err);
+  } else {
+    console.log(data);
+  }
+});
