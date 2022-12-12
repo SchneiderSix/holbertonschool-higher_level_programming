@@ -8,10 +8,10 @@ request(process.argv[2], function (error, response, body) {
     const mydata = JSON.parse(body);
     let mydict = {};
     for (const i of mydata) {
-      if (mydata[i]['completed'] === true) {
+      if (i['completed'] === true) {
         mydict.push({
-          key: mydata[i]['userId'],
-          value: mydata[i]['id']
+          key: i['userId'],
+          value: i['id']
         });
       }
     }
