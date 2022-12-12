@@ -13,8 +13,6 @@ request(process.argv[2], function (error, response, body) {
       if ((idcom === i['userId']) && (i['completed'] === true)) {
         counter += 1;
         mydict[idcom] = counter;
-      } else {
-        counter = 0;
       }
     }
     console.log(mydict);
