@@ -1,8 +1,7 @@
 #!/usr/bin/node
 const fs = require('fs');
-let data = process.argv[3];
-fs.readFile(process.argv[2], 'utf8', data, (err) => {
+fs.writeFile(process.argv[2], process.argv[3], function (err) {
   if (err) {
     console.error(err);
-  };
+  }
 });
