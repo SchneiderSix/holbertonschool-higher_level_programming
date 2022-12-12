@@ -7,15 +7,13 @@ request(process.argv[2], function (error, response, body) {
   } else {
     const mydata = JSON.parse(body);
     const mydict = {};
-    let counter = 0;
     for (const i of mydata) {
-      const idcom = i.userId;
       if (i.completed === true) {
-        if (!mydict[idcom]) {
-          counter = 0;
+        if (i.userId in mydict) {
+          mydict[i.userId]++;
+        } else {
+          mydict[i.userId] = 1;
         }
-        counter += 1;
-        mydict[idcom] = counter;
       }
     }
     console.log(mydict);
