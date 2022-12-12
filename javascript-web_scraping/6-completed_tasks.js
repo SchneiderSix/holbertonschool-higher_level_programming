@@ -9,11 +9,12 @@ request(process.argv[2], function (error, response, body) {
     let mydict = {};
     let counter = 0;
     for (const i of mydata) {
-      let idcom = i['userId'];
+      let idcom = 1;
       if ((i['userId'] === idcom) && (i['completed'] === true)) {
         counter += 1;
         mydict[idcom] = counter;
       }
+      idcom++;
     }
     console.log(mydict);
   }
