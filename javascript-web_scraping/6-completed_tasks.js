@@ -7,9 +7,9 @@ request(process.argv[2], function (error, response, body) {
   } else {
     const mydata = JSON.parse(body);
     let mydict = {};
+    let counter = 0;
     for (const i of mydata) {
       let idcom = i['userId'];
-      let counter = 0;
       if (i['userId'] === idcom) {
         if (i['completed'] === true) {
           counter += 1;
