@@ -1,5 +1,7 @@
 #!/usr/bin/node
 $(document).ready(function()
 {
-	$("#red_header").on("click", $("#red_header").addClass("red"));
+    $("#red_header").click(function() {
+        $("#red_header").addClass("red");
+    });
 });
