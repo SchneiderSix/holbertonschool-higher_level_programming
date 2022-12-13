@@ -1,5 +1,3 @@
 #!/usr/bin/node
-$(document).ready(function()
-{
-	$("header").css("color", "#FF0000");
-});
+const h = document.getElementsByClassName('chori');
+h[0].style.color = "#FF0000";
